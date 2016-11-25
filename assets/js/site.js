@@ -6,6 +6,6 @@ $("#contact").on("click", function(){
 	$("#contactList").toggleClass("hidden");
 });
 
-$("#work").on("click", function(){
-	$("#workList").toggleClass("hidden");
+$("#portfolio").on("click", function(){
+	$("#portfolioList").toggleClass("hidden");
 });
