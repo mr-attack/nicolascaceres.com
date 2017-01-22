@@ -56,6 +56,7 @@ body {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
+	margin-right: 50px;
 }
 
 #parent {
@@ -77,8 +78,12 @@ a {
 	color: black;
 }
 
-p, #skills {
+p {
 	margin-top: 15px;
+}
+
+#skills {
+	margin-top: 30px;
 }
 
 .captionImage, .box {
@@ -140,10 +145,31 @@ p, #skills {
 	text-decoration: underline;
 }
 
+@media only screen and (max-width: 992px) {
+	#navbar {
+	    width: 200px;
+	}
+
+	#nav {
+		left: 30%;
+		transform: translate(-25%, -50%);
+	}
+
+	#parent {
+	    margin-left: 200px;
+	}
+}
+
 @media only screen and (max-width: 640px) {
+	body, h1, h2, h3, p {
+		font-size: 16px;
+	}
+
 	#navbar {
 	    width: 100%;
-		height: 60px;
+		height: 120px;
+		z-index: 100;
+		background: #f5f5f5;
 	}
 
 	#nav {
@@ -158,35 +184,53 @@ p, #skills {
 		position: static;
 		top: 0%;
 		transform: translateY(0%);
+		margin-right: 0px;
 	}
 
 	#parent {
 	    margin-left: 0px;
-		margin-top: 90px;
+		margin-top: 120px;
 		padding: 0px 15px;
 	}
 
-	#main, #portfolio, #contact {
-		float: left;
+	.box {
+		float: none;
+		position: relative;
+		overflow: visible;
+		background: white;
+		width: 100%;
 	}
 
-	#main {
-		width: 40%;
+	.box, .caption, .captionImage {
+		height: 100px;
 	}
 
-	#portfolio, #contact {
-		width: 30%;
+	.caption {
+		height: 90px;
 	}
 
-	#portfolio, #contact, #contactList {
-		text-align: right;
+	.captionImage {
+		width: 100px;
+		border-right: 15px solid #f5f5f5;
+		border-bottom: 15px solid #f5f5f5;
 	}
 
-	#skills {
-		margin-top: 45px;
+	.caption {
+		opacity: 1;
+		position: relative;
+		left: 115px;
+		padding: 5px;
 	}
 
-	h1, h2 {
-		line-height: 15px;
+	.caption h3, .caption li, .caption a {
+		font-size: 12px;
+	}
+
+	.captionTop {
+		height: 75px;
+	}
+
+	.captionBottom {
+		height: 15px;
 	}
 }

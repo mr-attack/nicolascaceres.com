@@ -1,3 +1,5 @@
-# nicolascaceres.com
+# [nicolascaceres.com](http://nicolascaceres.com)
 
-lol
+Portfolio site with desktop, tablet and mobile layouts
+
+Built with HTML, CSS and a little jQuery
