@@ -114,13 +114,18 @@ p {
 	height: 15px;
 }
 
-.socialImage {
-	height: 13px;
-	margin-right: 10px;
+.socialBox {
+	float: left;
+	position: relative;
+	overflow: hidden;
 }
 
-.socialLink:hover {
-	text-decoration: underline;
+.socialBox:nth-child(even) {
+  margin: 0px 30px;
+}
+
+.socialImage {
+	height: 30px;
 }
 
 @media only screen and (max-width: 992px) {
