@@ -1,54 +1,310 @@
-/*reset*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
-body {line-height: 1;}
-ol, ul {list-style: none;}
-blockquote, q {quotes: none;}
-blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}
-table {border-collapse: collapse;border-spacing: 0;}
+/*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
 
-/*actual*/
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+figcaption,
+figure,
+main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details,
+menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+/* -------------------- actual css -------------------- */
+
 body {
 	background: #f5f5f5;
-	font-family: 'HelveticaNeue', 'Helvetica Neue', 'Helvetica', sans-serif;
-	font-size: 13px;
+  line-height: calc(1.1em + 0.5vw);
+  font-family: 'HelveticaNeue', 'Helvetica Neue', 'Helvetica', sans-serif;
 	color: black;
 }
 
-#navbar {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  bottom: 0px;
-  width: 300px;
+.container {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 20vh 0;
 }
 
-#nav {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+section {
+  margin-top: 10vh;
 }
 
-#content {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	margin-right: 50px;
+h1 {
+  font-size: 40px;
 }
 
-#parent {
-  margin-left: 300px;
+h2 {
+  font-size: 27px;
+  font-weight: normal;
 }
 
-h1, h2, h3 {
-	font-size: 13px;
-	font-weight: bold;
+@media screen and (max-width: 535px) {
+  h1, h2 {
+    line-height: 1.15em;
+  }
 }
 
-h1, h2, .socialLink {
-	line-height: 30px;
-	cursor: pointer;
+h3, p, a {
+  font-size: 16px;
+}
+
+p {
+  width: 20em;
+}
+
+/* fluid typography functions by Indrek Paas @indrekpaas */
+
+@media screen and (min-width: 320px) {
+  h1 {
+    font-size: calc(40px + 20 * (100vw - 320px) / 1046);
+  }
+
+  h2 {
+    font-size: calc(27px + 13 * (100vw - 320px) / 1046);
+  }
+
+  h3, p, a {
+    font-size: calc(16px + 2 * (100vw - 320px) / 1046);
+  }
+
+  p {
+    width: calc(20em + 16 * (100vw - 320px) / 1046);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3, p, a {
+    font-size: 18px;
+  }
+
+  p {
+    width: 36em;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }
 
 a {
@@ -56,37 +312,41 @@ a {
 	color: black;
 }
 
-p {
-	margin-top: 15px;
+.grey-text {
+  color: grey;
 }
 
-#skills {
-	margin-top: 30px;
+.fa-linkedin-square {
+	color: #0077b5;
 }
 
-.captionImage, .box {
-	height: 150px;
-	width: 150px;
+.fa-envelope-o {
+	color: #c71610;
 }
 
-.caption {
-	height: 130px;
-	width: 130px;
+.fa-github {
+	color: #333;
 }
 
-.hidden {
-	display: none;
+#experience li {
+  transition: all 200ms ease-out;
 }
 
-.grey {
-	color: grey;
+#experience li:hover {
+  margin-left: 10px;
 }
 
 .box {
-	margin: 0px 15px 15px 0px;
-	float: left;
-	position: relative;
-	overflow: hidden;
+  height: 200px;
+	width: 200px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.box img, .caption {
+  height: 100%;
+  width: 100%;
 }
 
 .box img {
@@ -94,6 +354,7 @@ p {
 }
 
 .caption {
+  box-sizing: border-box;
 	opacity: 0;
 	background-color: rgba(255,255,255,0.85);
 	position: absolute;
@@ -104,116 +365,4 @@ p {
 
 .caption:hover {
 	opacity: 1;
-}
-
-.captionTop {
-	height: 115px;
-}
-
-.captionBottom {
-	height: 15px;
-}
-
-.socialBox {
-	float: left;
-	position: relative;
-	overflow: hidden;
-}
-
-.socialBox:nth-child(even) {
-  margin: 0px 30px;
-}
-
-.socialImage {
-	height: 30px;
-}
-
-@media only screen and (max-width: 992px) {
-	#navbar {
-    width: 200px;
-	}
-
-	#nav {
-		left: 30%;
-		transform: translate(-25%, -50%);
-	}
-
-	#parent {
-    margin-left: 200px;
-	}
-}
-
-@media only screen and (max-width: 640px) {
-	body, h1, h2, h3, p {
-		font-size: 16px;
-	}
-
-	#navbar {
-    width: 100%;
-		height: 120px;
-		z-index: 100;
-		background: #f5f5f5;
-	}
-
-	#nav {
-		padding: 15px;
-		position: static;
-		top: 0%;
-		left: 0%;
-		transform: translate(0%, 0%);
-	}
-
-	#content {
-		position: static;
-		top: 0%;
-		transform: translateY(0%);
-		margin-right: 0px;
-	}
-
-	#parent {
-    margin-left: 0px;
-		margin-top: 120px;
-		padding: 0px 15px;
-	}
-
-	.box {
-		float: none;
-		position: relative;
-		overflow: visible;
-		background: white;
-		width: 100%;
-	}
-
-	.box, .caption, .captionImage {
-		height: 100px;
-	}
-
-	.caption {
-		height: 90px;
-	}
-
-	.captionImage {
-		width: 100px;
-		border-right: 15px solid #f5f5f5;
-		border-bottom: 15px solid #f5f5f5;
-	}
-
-	.caption {
-		opacity: 1;
-		position: relative;
-		left: 115px;
-		padding: 5px;
-	}
-
-	.caption h3, .caption li, .caption a {
-		font-size: 12px;
-	}
-
-	.captionTop {
-		height: 75px;
-	}
-
-	.captionBottom {
-		height: 15px;
-	}
 }
