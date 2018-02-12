@@ -250,41 +250,33 @@ h2 {
   font-weight: normal;
 }
 
-@media screen and (max-width: 535px) {
+@media screen and (max-width: 580px) {
   h1, h2 {
     line-height: 1.15em;
   }
 }
 
-h3, p, a {
+h3, p, a, span {
   font-size: 16px;
-}
-
-p {
-  width: 20em;
 }
 
 /* fluid typography functions by Indrek Paas @indrekpaas */
 
 @media screen and (min-width: 320px) {
   h1 {
-    font-size: calc(40px + 20 * (100vw - 320px) / 1046);
+    font-size: calc(40px + 20 * (100vw - 320px) / 660);
   }
 
   h2 {
-    font-size: calc(27px + 13 * (100vw - 320px) / 1046);
+    font-size: calc(27px + 13 * (100vw - 320px) / 660);
   }
 
-  h3, p, a {
-    font-size: calc(16px + 2 * (100vw - 320px) / 1046);
-  }
-
-  p {
-    width: calc(20em + 16 * (100vw - 320px) / 1046);
+  h3, p, a, span {
+    font-size: calc(16px + 2 * (100vw - 320px) / 660);
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 980px) {
   h1 {
     font-size: 60px;
   }
@@ -293,12 +285,8 @@ p {
     font-size: 40px;
   }
 
-  h3, p, a {
+  h3, p, a, span {
     font-size: 18px;
-  }
-
-  p {
-    width: 36em;
   }
 }
 
@@ -316,16 +304,14 @@ a {
   color: grey;
 }
 
-.fa-linkedin-square {
-	color: #0077b5;
+#skillsGrid {
+  display: grid;
+  grid-template-columns: 25px auto;
+  grid-row-gap: calc(1.1em + 0.5vw);
 }
 
-.fa-envelope-o {
-	color: #c71610;
-}
-
-.fa-github {
-	color: #333;
+#skills .fa {
+  margin: auto 0;
 }
 
 #experience li {
@@ -337,11 +323,13 @@ a {
 }
 
 .box {
-  height: 200px;
-	width: 200px;
+  height: 180px;
+	width: 180px;
   position: relative;
   overflow: hidden;
+  margin-right: 20px;
   margin-bottom: 20px;
+  float: left;
 }
 
 .box img, .caption {
@@ -365,4 +353,20 @@ a {
 
 .caption:hover {
 	opacity: 1;
+}
+
+#contact a {
+  margin-right: 3vw;
+}
+
+.fa-linkedin-square:hover {
+	color: #0077b5;
+}
+
+.fa-envelope-o:hover {
+	color: #c71610;
+}
+
+.fa-github:hover {
+	color: #333;
 }
