@@ -67,7 +67,7 @@ body {
   left: 10vw;
   padding: 3vw;
   width: 60vw;
-  height: 50vh;
+  height: 45vh;
   z-index: 1;
 }
 
@@ -75,12 +75,6 @@ body {
   #about {
     top: 8vh;
   }
-}
-
-#skills {
-  display: grid;
-  grid-template-columns: 25px auto;
-  /* grid-row-gap: calc(1.1em + 0.5vw); */
 }
 
 #skills .fa {
