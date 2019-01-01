@@ -69,6 +69,7 @@ body {
   width: 60vw;
   height: 45vh;
   z-index: 1;
+  overflow: auto;
 }
 
 @media screen and (min-width: 980px) {
