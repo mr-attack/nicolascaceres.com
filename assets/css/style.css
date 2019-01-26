@@ -67,7 +67,7 @@ body {
   left: 10vw;
   padding: 3vw;
   width: 60vw;
-  height: 45vh;
+  height: 50vh;
   z-index: 1;
   overflow: auto;
 }
@@ -75,6 +75,7 @@ body {
 @media screen and (min-width: 980px) {
   #about {
     top: 8vh;
+    height: 45vh;
   }
 }
 
@@ -109,7 +110,7 @@ body {
   color: #ffcb0c;
   position: absolute;
   bottom: 0;
-  left: 30vw;
+  left: 20vw;
   width: 55vw;
   height: 30vh;
   padding: 3vh;
@@ -117,6 +118,7 @@ body {
 
 @media screen and (min-width: 980px) {
   #contact {
+    left: 30vw;
     width: 25vw;
     bottom: 3vh;
   }
