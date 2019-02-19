@@ -8,53 +8,37 @@
     <link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
     <link rel="icon" type="image/png" href="assets/images/circle.png"/>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   </head>
   <body>
-    <div class="container-border">
-      <div id="title">
-          <h1>NICOLÁS CÁCERES <br class="mobile-br"><span class="yellow-text">WEB DEVELOPER</span></h1>
-      </div>
-      <div id="icon">
-          <svg width="250" height="40">
-            <rect x="0" width="40" height="40" style="fill: #ffcb0c;" />
-            <rect x="50" width="40" height="40" style="fill: black;" />
-            <rect x="100" width="40" height="40" style="fill: grey;" />
-            <rect x="150" width="40" height="40" style="fill: darkgrey;" />
-            <rect x="200" width="40" height="40" stroke="black" fill="transparent" stroke-width="1" />
-          </svg>
-      </div>
-      <div id="icon-rotate">
-        <svg width="30" height="190">
-          <rect y="0" width="30" height="30" style="fill: #ffcb0c;" />
-          <rect y="40" width="30" height="30" style="fill: black;" />
-          <rect y="80" width="30" height="30" style="fill: grey;" />
-          <rect y="120" width="30" height="30" style="fill: darkgrey;" />
-          <rect y="160" width="30" height="30" stroke="black" fill="transparent" stroke-width="1" />
-        </svg>
-    </div>
-      <div class="click" id="about">
-        <h2>ABOUT</h2>
-        <p>A web developer with previous experience in IT and business.</p>
-        <p>I've brought projects to life from the first idea to launch day.</p>
-        <div id="skills" class="white-text">
-          <p>
-            <i class="fa fa-code"></i>&nbsp;HTML, CSS, JS, Node, React, Git
-          </p>
-          <p>
-            <i class="fa fa-database"></i>&nbsp; SQL, MongoDB
-          </p>
-          <p>
-            <i class="fa fa-palette"></i>&nbsp; Photoshop, Illustrator
-          </p>
+    <div class="container">
+      <svg>
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <header>
+        <h1>NICOLÁS CÁCERES</h1>
+        <h2 class="yellow-text">WEB DEVELOPER</h2>
+      </header>
+      <section id="about">
+        <h3>ABOUT</h3>
+        <p>Web developer with previous experience in IT support and tech.</p>
+        <p>I've worked on projects from the first idea to launch day and beyond.</p>
+      </section>
+      <section id="skills">
+        <div id="skillsGrid" class="grey-text">
+          <i class="fa fa-code"></i>
+          <span>HTML, CSS, JavaScript, TypeScript, Node, React, Redux, Git</span>
+          <i class="fa fa-database"></i>
+          <span>SQL, MongoDB, Excel</span>
+          <i class="fa fa-palette"></i>
+          <span>Photoshop, Illustrator</span>
         </div>
-      </div>
-      <div class="click" id="experience">
-        <h1>EXPERIENCE</h1>
+      </section>
+      <section id="experience">
+        <h3>EXPERIENCE</h3>
         <ul>
           <li>
             <p>
-              <strong>Developer</strong>
+              <strong>Web Developer</strong>
               <br>
               <span class="grey-text"><i class="fas fa-map-marker-alt"></i> inMotionNow, <i class="far fa-clock"></i> Apr 2018 - Now</span>
               <br>
@@ -98,23 +82,14 @@
             </p>
           </li>
         </ul>
-      </div>
-      <div class="click" id="contact">
-        <div id="contact-content">
-            <a target="_blank" alt="LinkedIn" href="https://www.linkedin.com/in/caceresnicolas/"><i class="fab fa-linkedin fa-3x"></i></a>
-            <a target="_blank" alt="Github" href="https://github.com/mr-attack"><i class="fab fa-github fa-3x"></i></a>
-            <a target="_blank" alt="Email" href="mailto:nicolas.caceres89@gmail.com"><i class="far fa-envelope fa-3x"></i></a>
-            <h1>CONTACT</h1>
-        </div>
-      </div>
+      </section>
+      <section id="contact">
+        <h3>CONTACT</h3>
+        <a target="_blank" alt="LinkedIn" href="https://www.linkedin.com/in/caceresnicolas/"><i class="fab fa-linkedin fa-4x"></i></a>
+        <a target="_blank" alt="Github" href="https://github.com/mr-attack"><i class="fab fa-github fa-4x"></i></a>
+        <a target="_blank" alt="Email" href="mailto:nicolas.caceres89@gmail.com"><i class="far fa-envelope fa-4x"></i></a>
+      </section>
     </div>
-    <script type="text/javascript">
-      let zNumber = 1;
-      $(".click").click(function () {       
-        zNumber++;
-        $(this).css("z-index", zNumber);
-      });
-    </script>
     <script>
         !function(n,i,c,o,l,a,s){n.GoogleAnalyticsObject=c;n[c]||(n[c]=function(){
         (n[c].q=n[c].q||[]).push(arguments)});n[c].l=+new Date;a=i.createElement(o);
