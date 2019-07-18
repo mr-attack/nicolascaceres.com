@@ -7,6 +7,7 @@ body {
 
 ::selection {
   background-color: #ffcb0c;
+  color: #1a1a1a;
 }
 
 .container {
@@ -122,4 +123,28 @@ a {
 
 .fa-github:hover {
 	color: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1a1a1a;
+    color: #c0c0c0;
+    line-height: calc(1.2em + 0.5vw);
+  }
+
+  a {
+    color: #c0c0c0;
+  }
+
+  svg {
+    fill: #c0c0c0;
+  }
+
+  .dark-grey-text {
+    color: #5c5c5c;
+  }
+
+  .fa-github:hover {
+    color: #f0f0f0;
+  }
 }
