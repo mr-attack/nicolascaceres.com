@@ -2,7 +2,7 @@ body {
 	background: #f5f5f5;
   line-height: calc(1.1em + 0.5vw);
   font-family: 'HelveticaNeue', 'Helvetica Neue', 'Helvetica', sans-serif;
-	color: black;
+  color: #1a1a1a;
 }
 
 ::selection {
@@ -21,6 +21,8 @@ section {
 }
 
 h1 {
+  background-color: #ffcb0c;
+  display: inline;
   font-size: 40px;
 }
 
@@ -43,7 +45,7 @@ h3, p, a, span {
 
 @media screen and (min-width: 320px) {
   h1 {
-    font-size: calc(40px + 20 * (100vw - 320px) / 660);
+    font-size: calc(36px + 20 * (100vw - 320px) / 660);
   }
 
   h2 {
@@ -113,23 +115,18 @@ a {
   margin-right: 3vw;
 }
 
-.fa-linkedin:hover {
-	color: #0077b5;
-}
-
-.fa-envelope:hover {
-	color: #c71610;
-}
-
-.fa-github:hover {
-	color: #333;
+#contact a:hover {
+  color: #ffcb0c;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
     background: #1a1a1a;
     color: #c0c0c0;
-    line-height: calc(1.2em + 0.5vw);
+  }
+
+  h1 {
+    color: #1a1a1a;
   }
 
   a {
@@ -144,7 +141,7 @@ a {
     color: #5c5c5c;
   }
 
-  .fa-github:hover {
+  #contact a:hover {
     color: #f0f0f0;
   }
 }
