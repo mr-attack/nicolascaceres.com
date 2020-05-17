@@ -21,7 +21,6 @@ section {
 }
 
 h1 {
-  background-color: #ffcb0c;
   display: inline;
   font-size: 40px;
 }
@@ -125,16 +124,12 @@ a {
     color: #c0c0c0;
   }
 
-  h1 {
-    color: #1a1a1a;
-  }
-
   a {
     color: #c0c0c0;
   }
 
   svg {
-    fill: #c0c0c0;
+    fill: #ffcb0c;
   }
 
   .dark-grey-text {
