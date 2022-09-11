@@ -5,8 +5,18 @@ html {
 body {
 	background: #f5f5f5;
   color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
   font-family: 'HelveticaNeue', 'Helvetica Neue', 'Helvetica', sans-serif;
+  gap: 10vh;
   line-height: calc(1.1em + 0.5vw);
+  padding: 20vh;
+}
+
+@media screen and (max-width: 860px) {
+  body {
+    padding: 20vh 5vh;
+  }
 }
 
 ::selection {
@@ -14,14 +24,8 @@ body {
   color: #1a1a1a;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 20vh 0;
-  width: 80vw;
-}
-
-section {
-  margin-top: 10vh;
+svg {
+  margin-bottom: -40px;
 }
 
 ul {
@@ -88,13 +92,13 @@ p {
 }
 
 .skills-row {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  margin-bottom: calc(1.1em + 0.5vw);
+  gap: calc(1.1em + 0.5vw);
 }
 
 .skills-row i {
-  margin-right: calc(1.1em + 0.5vw);
   width: 1em;
 }
 
@@ -107,8 +111,9 @@ p {
   padding-left: 0.75em;
 }
 
-#contact a {
-  margin-right: 4vw;
+#contact {
+  display: flex;
+  gap: 4vw;
 }
 
 #contact a:hover {

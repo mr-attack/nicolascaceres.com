@@ -1,5 +1,9 @@
 /*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
 
+body {
+  margin: 0;
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
